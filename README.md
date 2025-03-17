@@ -3,3 +3,5 @@
 # Like:
 
 # MBTI:
+
+# bloodtype:
