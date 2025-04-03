@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object_withForIn</title>
+    <script>
+      let product = {
+        name: '7D 건조 망고',
+        type: '당절임',
+        ingredients: '망고, 설탕, 메타중아황산나트륨, 치자황색소',
+        origin: '필리핀',
+      };
+
+      for (let obj in product) {
+        console.log(obj + ' : ' + product[obj]);
+      } //호출
+    </script>
+  </head>
+  <body>
+    <h1>object_withForIn</h1>
+  </body>
+</html>

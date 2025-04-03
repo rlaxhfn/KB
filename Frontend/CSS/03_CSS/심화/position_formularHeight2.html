@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position_absoluteLeftTop</title>
+    <style>
+      div {
+        border: 3px solid;
+        width: 500px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .box {
+        margin: 0.5rem;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border: none;
+      }
+
+      .box:nth-child(1) {
+        background-color: red;
+        top: 0;
+        left: 0;
+        z-index: 100;
+      }
+
+      .box:nth-child(2) {
+        background-color: green;
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+      }
+
+      .box:nth-child(3) {
+        background-color: blue;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+      }
+
+      h1 {
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor amet</h1>
+    <div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor amet</h1>
+  </body>
+</html>

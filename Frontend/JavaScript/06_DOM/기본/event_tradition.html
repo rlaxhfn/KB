@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traditional Event</title>
+    <script>
+      //   // 고전 -> onclick
+      //   window.onload = function () {
+      //     // 문서 객체를 선택합니다.
+      //     let button = document.getElementById('button');
+
+      //     // 이벤트를 연결합니다.
+      //     button.onclick = function () {
+      //       alert('click');
+      //     };
+      //   };
+
+      // addEventListener
+      window.onload = function () {
+        // 문서 객체를 선택합니다.
+        let button = document.getElementById('button');
+        const $text = button.innerText; // text 가져오기
+
+        // 이벤트를 연결합니다.
+        button.addEventListener('click', (e) => {
+          alert($text);
+        });
+      };
+
+      // inline with script
+      //   function buttonClick() {
+      //     alert('click');
+      //   }
+    </script>
+  </head>
+  <body>
+    <!-- inline
+    <button onclick="alert('click')">버튼</button> -->
+
+    <!-- inline with script
+    <button onclick="buttonClick()">버튼</button>  -->
+    <button id="button">버튼</button>
+  </body>
+</html>

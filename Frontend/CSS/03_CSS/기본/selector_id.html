@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector_id</title>
+    <style>
+      #header {
+        background-color: red;
+        width: 800px;
+        margin: auto 0;
+      }
+
+      #wrap {
+        width: 800px;
+        display: flex;
+        margin: auto 0;
+      }
+
+      #aside {
+        background-color: blue;
+        flex-grow: 1;
+      }
+
+      #content {
+        background-color: green;
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>#header 태그</h1>
+    </div>
+    <div id="wrap">
+      <div id="aside">
+        <h1>#aside 태그</h1>
+      </div>
+      <div id="content">
+        <h1>#content태그</h1>
+      </div>
+    </div>
+  </body>
+</html>

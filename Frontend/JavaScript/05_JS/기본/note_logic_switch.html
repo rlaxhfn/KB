@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>note_logic_switch</title>
+    <script>
+      //변수선언
+      let date = new Date();
+      let month = date.getMonth() + 1; //zero-base 설정으로 +1 필요
+      // month의 범위를 설정하는 seasons변수 선언
+      let seasons =
+        month >= 3 && month < 6
+          ? 0
+          : month >= 6 && month < 9
+          ? 1
+          : month >= 9 && month < 12
+          ? 2
+          : 3;
+
+      //switch문
+      /* switch (month) {
+        case 3:
+        case 4:
+        case 5:
+          month = '봄입니다.';
+          break;
+        case 6:
+        case 7:
+        case 8:
+          month = '여름입니다.';
+          break;
+        case 9:
+        case 10:
+        case 11:
+          month = '가을입니다.';
+          break;
+        default:
+          month = '겨울입니다.';
+      } */ // month를 expression으로 하는 경우
+
+      switch (seasons) {
+        case 0:
+          month = '봄입니다.';
+          break;
+        case 1:
+          month = '여름입니다.';
+          break;
+        case 2:
+          month = '가을입니다.';
+          break;
+        default:
+          month = '겨울입니다.';
+      } //seasons를 expression으로 하는 경우
+
+      alert(month);
+    </script>
+  </head>
+  <body></body>
+</html>

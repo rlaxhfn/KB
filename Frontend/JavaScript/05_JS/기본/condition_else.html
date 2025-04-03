@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>condition_else</title>
+    <script>
+      //객체선언
+      let date = new Date();
+      //변수선언
+      let condition = date.getHours();
+
+      if (condition < 12) {
+        alert('오전입니다.');
+      } else {
+        alert('오후입니다.');
+      }
+
+      //조건문(삼항)
+      //condition < 12 ? alert('오전입니다.') : alert('오후입니다.');
+    </script>
+  </head>
+  <body>
+    <h1>condition_else</h1>
+  </body>
+</html>
