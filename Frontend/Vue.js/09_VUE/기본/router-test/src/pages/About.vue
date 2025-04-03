@@ -6,9 +6,9 @@
   </div>
 </template>
 <script>
-import { useRoute } from 'vue-router';
+import { useRoute } from "vue-router";
 export default {
-  name: 'About',
+  name: "About",
   //   created() {
   //     console.log(this.$route);
   //   },
@@ -19,6 +19,6 @@ export default {
 };
 </script>
 <!-- <script setup>
-import useRoute from 'vue-router';
+import { useRoute } from 'vue-router';
 const route = useRoute();
 </script> -->
