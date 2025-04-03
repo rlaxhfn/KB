@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Basic</title>
+    <script>
+      window.onload = function () {
+        const $h1s = document.querySelectorAll('h1'); //배열로 처리
+        //for반복문
+        for (let i = 0; i < $h1s.length; i++) {
+          $h1s[i].style.cssText = 'background-color: red; color: orange'; //css추가
+          $h1s[i].textContent = 'From JavaScript'; //text변경
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+  </body>
+</html>

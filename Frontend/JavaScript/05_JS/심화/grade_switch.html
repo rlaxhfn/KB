@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grade_switch</title>
+    <script>
+      //변수선언
+      // let score = Number(prompt('성적을 입력하세요:')); //타입 정의
+      // console.log(score); //성적 입력
+      // if (score > 100 || score < 0) {
+      //   console.log('잘못된 성적입니다. 다시 입력하세요.');
+      //   score = prompt('성적을 입력하세요:'); //초기화
+      //   console.log(score);
+      // }
+
+      //do-while문
+      let score;
+      do {
+        score = Number(prompt('성적을 입력하세요:'));
+        if (score == null) break;
+      } while (score < 0 || score > 100);
+
+      //10단위, 기본 ABCDF등급
+      let grade = Math.trunc(score / 10);
+      //정수만 리턴(0~10)
+      // console.log(grade);
+      switch (grade) {
+        case 10:
+        case 9:
+          console.log('당신의 학점은 A입니다.');
+          break;
+        case 8:
+          console.log('당신의 학점은 B입니다.');
+          break;
+        case 7:
+          console.log('당신의 학점은 C입니다.');
+          break;
+        case 6:
+          console.log('당신의 학점은 D입니다.');
+          break;
+        default:
+          console.log('당신의 학점은 F입니다.');
+      }
+
+      console.log('플러스 학점이라면?');
+      // 5단위, +가 있는 학점시스템
+      let gradeWithPlus = score == 100 ? 20 : Math.ceil((score + 1) / 5);
+      // 첫째자리에서 올림(1~20) -> 5로 나누어 떨어지는 자리는 올림이 불가하므로 socre +1 except: 100
+      switch (gradeWithPlus) {
+        case 20:
+          console.log('당신의 학점은 A+입니다.');
+          break;
+        case 19:
+          console.log('당신의 학점은 A입니다.');
+          break;
+        case 18:
+          console.log('당신의 학점은 B+입니다.');
+          break;
+        case 17:
+          console.log('당신의 학점은 B입니다.');
+          break;
+        case 16:
+          console.log('당신의 학점은 C+입니다.');
+          break;
+        case 15:
+          console.log('당신의 학점은 C입니다.');
+          break;
+        case 14:
+          console.log('당신의 학점은 D+입니다.');
+          break;
+        case 13:
+          console.log('당신의 학점은 D입니다.');
+          break;
+        default:
+          console.log('당신의 학점은 F입니다.');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

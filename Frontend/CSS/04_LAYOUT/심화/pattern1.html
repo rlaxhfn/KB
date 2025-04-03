@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pattern1</title>
+    <style>
+      /* 초기화 */
+      body * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+
+      #menu {
+        position: relative;
+        left: 3rem;
+      }
+
+      #section {
+        position: absolute;
+        width: 65%;
+        top: 0;
+        right: 3rem;
+      }
+
+      @media (max-width: 767px) {
+        #menu,
+        #section {
+          position: static;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li>메뉴A</li>
+        <li>메뉴B</li>
+        <li>메뉴C</li>
+      </ul>
+    </div>
+    <div id="section">
+      <h1>Lorem ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id
+        minima maxime doloribus modi? Corporis eius veniam molestias est fugit
+        et optio quaerat reprehenderit cumque repellat, ipsa ea! Quisquam,
+        maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusantium id minima maxime doloribus modi? Corporis eius veniam
+        molestias est fugit et optio quaerat reprehenderit cumque repellat, ipsa
+        ea! Quisquam, maiores!Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Accusantium id minima maxime doloribus modi? Corporis eius veniam
+        molestias est fugit et optio quaerat reprehenderit cumque repellat, ipsa
+        ea! Quisquam, maiores!Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Accusantium id minima maxime doloribus modi? Corporis eius veniam
+        molestias est fugit et optio quaerat reprehenderit cumque repellat, ipsa
+        ea! Quisquam, maiores! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Accusantium id minima maxime doloribus modi? Corporis
+        eius veniam molestias est fugit et optio quaerat reprehenderit cumque
+        repellat, ipsa ea! Quisquam, maiores! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Accusantium id minima maxime doloribus
+        modi? Corporis eius veniam molestias est fugit et optio quaerat
+        reprehenderit cumque repellat, ipsa ea! Quisquam, maiores! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Accusantium id minima
+        maxime doloribus modi? Corporis eius veniam molestias est fugit et optio
+        quaerat reprehenderit cumque repellat, ipsa ea! Quisquam, maiores!
+      </p>
+    </div>
+  </body>
+</html>

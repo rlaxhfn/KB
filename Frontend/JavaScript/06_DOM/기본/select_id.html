@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Basic</title>
+    <script>
+      window.onload = function () {
+        const $head = document.getElementById('header'); //get메소드로 접근
+        $head.style.cssText = 'background-color: red; color: orange'; //css추가
+        $head.innerHTML = 'From JavaScript'; //text변경
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="header">Header</h1>
+  </body>
+</html>

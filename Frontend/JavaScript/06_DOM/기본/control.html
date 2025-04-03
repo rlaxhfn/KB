@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Basic</title>
+    <script>
+      //   // 한 번은 단순 텍스트로 출력 -> html태그 이스케이프(innerText/textContent)
+      //   window.onload = function () {
+      //     const $body = document.querySelector('body');
+      //     let content = '';
+      //     for (let i = 0; i < 10; i++) {
+      //       content += `<h1>Header - ${i}</h1>`;
+      //     }
+      //     $body.textContent = content;
+      //   };
+      // -----
+      // 한 번은 html태그가 적용되도록 출력(innerHTML)
+      window.onload = function () {
+        const $body = document.querySelector('body');
+        let content = '';
+        for (let i = 0; i < 10; i++) {
+          content += `<h1>Header - ${i}</h1>`;
+        }
+        $body.innerHTML = content;
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

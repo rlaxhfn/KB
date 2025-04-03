@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function_callback</title>
+    <script>
+      //callback변수 선언
+      let callback = function () {
+        alert('함수 호출');
+      }; //함수 표현식
+
+      /* function callback() {
+        alert('함수 호출');
+      }; */ //함수 선언식
+
+      //callbackRepeat함수선언
+      function callbackRepeat(x) {
+        for (let i = 0; i < x; i++) {
+          callback();
+        }
+      }
+
+      callbackRepeat(10);
+    </script>
+  </head>
+  <body>
+    <h1>function_callback</h1>
+  </body>
+</html>

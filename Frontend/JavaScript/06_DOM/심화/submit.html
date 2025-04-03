@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            좋아하는 음식은?
+            <label><input type="checkbox" id="select-all" name="select-all" value="select-all">
+                전체 선택</label>
+            <label><input type="checkbox" name="food" value="라면" />
+                라면</label>
+            <label><input type="checkbox" name="food" value="만두" />
+                만두</label>
+            <label><input type="checkbox" name="food" value="불고기" />
+                불고기</label>
+            <input id="btn" type="button" value="전송" />
+        </div>
+    </form>
+    <script>
+        const $checkboxes = document.querySelectorAll('input[name="food"]')
+        const $selectAll = document.getElementById("select-all")
+        const $btn = document.getElementById("btn")
+
+        $checkboxes.forEach(($checkbox) => {
+            $checkbox.addEventListener('click', () => {
+                let $checkedBoxes = document.querySelectorAll('input[name="food"]:checked')
+                if ($checkedBoxes.length == 3) {
+                    $selectAll.checked = true
+                } else {
+                    $selectAll.checked = false
+                }
+            })
+        })
+
+        $selectAll.addEventListener('click', () => {
+            $checkboxes.forEach($checkbox => {
+                if ($checkbox.checked != $selectAll.checked) {
+                    $checkbox.checked = $selectAll.checked
+                }
+            });
+        })
+
+        $btn.addEventListener('click', () => {
+            let $checkedBoxes = document.querySelectorAll('input[name="food"]:checked');
+            if ($checkedBoxes.length) {
+                const selectedFoods = [];
+                for (let i = 0; i < $checkedBoxes.length; i++) {
+                    selectedFoods.push($checkedBoxes[i].value);
+                }
+                console.log('내가 좋아하는 건 말이죠 : ' + selectedFoods);
+                console.log(selectedFoods.length + '개나 드시려구요?')
+            } else {
+                console.log('왜 안 고르세요')
+            }
+        })
+    </script>
+</body>
+
+</html>

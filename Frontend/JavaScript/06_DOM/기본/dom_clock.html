@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clock</title>
+    <script>
+      window.onload = function () {
+        const $clock = document.getElementById('clock');
+        setInterval(() => {
+          let time = new Date(); //갱신
+          $clock.innerHTML = time.toString(); //innerHTML이 문자열을 받아서
+        }, 1000);
+      };
+
+      //setTimeout
+      //     function update() {
+      //       let time = new Date();
+      //       $clock.innerHTML = time.toString();
+      //       setTimeout(update, 1000);
+      //     }
+      //   };
+    </script>
+  </head>
+  <body>
+    <h1 id="clock"></h1>
+  </body>
+</html>

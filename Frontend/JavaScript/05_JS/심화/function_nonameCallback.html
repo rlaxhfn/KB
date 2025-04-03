@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function_nonameCallback</title>
+    <script>
+      //callbackRepeat함수 선언
+      //매개변수: callback -> 익명함수, times -> 반복 횟수
+      function callbackRepeat(callback, times) {
+        for (let i = 0; i < times; i++) {
+          callback();
+        }
+      }
+
+      callbackRepeat(function () {
+        alert('함수 호출');
+      }, 10);
+    </script>
+  </head>
+  <body>
+    <h1>function_nonameCallback</h1>
+  </body>
+</html>
