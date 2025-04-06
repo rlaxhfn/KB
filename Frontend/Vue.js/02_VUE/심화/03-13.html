@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-13</title>
+    <style>
+      #list {
+        width: 600px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      #list td,
+      #list th {
+        border: 1px solid black;
+        text-align: center;
+      }
+      #list > thead > tr {
+        color: yellow;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <table id="list">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전화번호</th>
+          </tr>
+        </thead>
+        <tbody id="contacts">
+          <tr v-for="con in contacts" :key="con.id">
+            <td>{{con.id}}</td>
+            <td>{{con.name}}</td>
+            <td>{{con.num}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      var vm = Vue.createApp({
+        name: "App",
+        data() {
+          return {
+            contacts: [
+              { id: 1011, name: "RM", num: "010-3456-8299" },
+              { id: 1012, name: "정국", num: "010-3456-8298" },
+              { id: 1013, name: "제이홉", num: "010-3456-8297" },
+              { id: 1014, name: "슈가", num: "010-3456-8296" },
+            ],
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
