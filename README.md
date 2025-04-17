@@ -4,8 +4,8 @@
 
 ## Frontend
 
-- [HTML5+CSS3](./Frontend/HTML5+CSS3.md)
-- [JavaScript](./Frontend/JavaScript.md)
+- [HTML5+CSS3](./Frontend/HTML5+CSS3+JavaScript.md)
+- [JavaScript](./Frontend/Vue.js.md)
 
 ## Backend
 
