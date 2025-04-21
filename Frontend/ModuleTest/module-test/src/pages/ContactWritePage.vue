@@ -52,21 +52,21 @@
   </div>
 </template>
 <script>
-import { RouterLink } from 'vue-router'
-import axios from 'axios'
+// import { RouterLink } from 'vue-router'
+// import axios from 'axios'
 
-const url = 'http://localhost:3000/contacts/'
-const error = ref(null)
-const router = useRouter()
+// const url = 'http://localhost:3000/contacts/'
+// const error = ref(null)
+// const router = useRouter()
 
-const updageContacts = async (newContact) => {
-  try {
-    const response = await axios.post(url, newContact)
-    console.log(response.data)
-    return response.data
-  } catch (err) {
-    error.value = err.message || '연락처 조회 실패'
-    console.log(err)
-  }
-}
+// const updageContacts = async (newContact) => {
+//   try {
+//     const response = await axios.post(url, newContact)
+//     console.log(response.data)
+//     return response.data
+//   } catch (err) {
+//     error.value = err.message || '연락처 조회 실패'
+//     console.log(err)
+//   }
+// }
 </script>

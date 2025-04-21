@@ -4,7 +4,7 @@
     <div class="row">
       <!-- v-if="Contacts"를 사용하는 방법도 있음, v-else로 Loading 처리 가능 -->
       <div class="col">
-        <img class="rounded" :src="Contact?.photo" :alt="Contact?.name" />
+        <img class="img-fluid rounded" :src="Contact?.photo" :alt="Contact?.name" />
       </div>
       <div class="col">
         <p>ID</p>
@@ -59,7 +59,7 @@ const getContactById = async (id) => {
 const handleDelete = async () => {
   if (!confirm('정말 삭제하시겠습니까?')) return
   try {
-    await axios.delete(`${url}+${ContactId}`)
+    await axios.delete(`${url}${ContactId}`)
     router.push('/contacts')
   } catch (err) {
     error.value = err.message || '연락처 삭제 실패'
