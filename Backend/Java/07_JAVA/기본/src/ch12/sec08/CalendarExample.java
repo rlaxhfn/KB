@@ -11,14 +11,28 @@ public class CalendarExample {
         System.out.println(year+"년 "+month+"월 "+day+"일 ");
 
         int week=cal.get(Calendar.DAY_OF_WEEK);
-        String dow = switch (week) {
-            case Calendar.SUNDAY -> "일";
-            case Calendar.MONDAY -> "월";
-            case Calendar.TUESDAY -> "화";
-            case Calendar.WEDNESDAY -> "수";
-            case Calendar.THURSDAY -> "목";
-            case Calendar.FRIDAY -> "금";
-            default -> "토";
+        String dow = "";
+        switch (week) {
+            case Calendar.SUNDAY:
+                dow="일";
+                break;
+            case Calendar.MONDAY:
+                dow="월";
+                break;
+            case Calendar.TUESDAY:
+                dow="화";
+                break;
+            case Calendar.WEDNESDAY:
+                dow="수";
+                break;
+            case Calendar.THURSDAY:
+                dow="목";
+                break;
+            case Calendar.FRIDAY:
+                dow="금";
+                break;
+            default:
+                dow="토";
         };
         int amPm=cal.get(Calendar.AM_PM);
         String strAmPm="";
