@@ -2,16 +2,18 @@
 
 [KB]IT's Your Life 6기 기록
 
-## Frontend
+## 진행현황 바로 보기
+### Frontend
 
-- [HTML5+CSS3](./Frontend/HTML5+CSS3+JavaScript.md)
-- [JavaScript](./Frontend/Vue.js.md)
+- [HTML5+CSS3+JavaScript](./Frontend/HTML5+CSS3+JavaScript.md)
+- [Vue.js](./Frontend/Vue.js.md)
 
-## Backend
+### Backend
 
 - [Java](./Backend/Java.md)
 
-## Project
+## 개인 작업
+### Project
 
 - [Alcoholstop Clone](https://github.com/JGStudy/Alcoholstop)
 
