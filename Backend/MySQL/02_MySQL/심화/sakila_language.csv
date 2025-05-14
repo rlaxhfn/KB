@@ -1,0 +1,4 @@
+Field,Type,Null,Key,Default,Extra
+language_id,"tinyint unsigned",NO,PRI,NULL,auto_increment
+name,char(20),NO,,NULL,
+last_update,timestamp,NO,,CURRENT_TIMESTAMP,"DEFAULT_GENERATED on update CURRENT_TIMESTAMP"

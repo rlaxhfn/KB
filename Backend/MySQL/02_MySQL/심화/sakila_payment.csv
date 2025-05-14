@@ -1,0 +1,8 @@
+Field,Type,Null,Key,Default,Extra
+payment_id,"smallint unsigned",NO,PRI,NULL,auto_increment
+customer_id,"smallint unsigned",NO,MUL,NULL,
+staff_id,"tinyint unsigned",NO,MUL,NULL,
+rental_id,int,YES,MUL,NULL,
+amount,"decimal(5,2)",NO,,NULL,
+payment_date,datetime,NO,,NULL,
+last_update,timestamp,YES,,CURRENT_TIMESTAMP,"DEFAULT_GENERATED on update CURRENT_TIMESTAMP"

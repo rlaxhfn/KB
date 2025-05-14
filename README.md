@@ -11,6 +11,7 @@
 ### Backend
 
 - [Java](./Backend/Java.md)
+- [MySQL](./Backend/MySQL.md)
 
 ## 개인 작업
 ### Project

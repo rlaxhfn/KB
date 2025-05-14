@@ -1,0 +1,5 @@
+Field,Type,Null,Key,Default,Extra
+inventory_id,"mediumint unsigned",NO,PRI,NULL,auto_increment
+film_id,"smallint unsigned",NO,MUL,NULL,
+store_id,"tinyint unsigned",NO,MUL,NULL,
+last_update,timestamp,NO,,CURRENT_TIMESTAMP,"DEFAULT_GENERATED on update CURRENT_TIMESTAMP"

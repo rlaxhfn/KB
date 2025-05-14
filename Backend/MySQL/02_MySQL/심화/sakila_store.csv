@@ -1,0 +1,5 @@
+Field,Type,Null,Key,Default,Extra
+store_id,"tinyint unsigned",NO,PRI,NULL,auto_increment
+manager_staff_id,"tinyint unsigned",NO,UNI,NULL,
+address_id,"smallint unsigned",NO,MUL,NULL,
+last_update,timestamp,NO,,CURRENT_TIMESTAMP,"DEFAULT_GENERATED on update CURRENT_TIMESTAMP"

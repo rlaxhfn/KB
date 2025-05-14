@@ -1,0 +1,4 @@
+Field,Type,Null,Key,Default,Extra
+country_id,"smallint unsigned",NO,PRI,NULL,auto_increment
+country,varchar(50),NO,,NULL,
+last_update,timestamp,NO,,CURRENT_TIMESTAMP,"DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
