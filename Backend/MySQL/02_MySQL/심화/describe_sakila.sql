@@ -1,0 +1,18 @@
+use sakila;
+show tables;
+show columns from actor;
+show columns from address;
+show columns from category;
+show columns from city;
+show columns from country;
+show columns from customer;
+show columns from film;
+show columns from film_actor;
+show columns from film_category;
+show columns from film_text;
+show columns from inventory;
+show columns from language;
+show columns from payment;
+show columns from rental;
+show columns from staff;
+show columns from store;

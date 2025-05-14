@@ -1,0 +1,5 @@
+Field,Type,Null,Key,Default,Extra
+city_id,"smallint unsigned",NO,PRI,NULL,auto_increment
+city,varchar(50),NO,,NULL,
+country_id,"smallint unsigned",NO,MUL,NULL,
+last_update,timestamp,NO,,CURRENT_TIMESTAMP,"DEFAULT_GENERATED on update CURRENT_TIMESTAMP"

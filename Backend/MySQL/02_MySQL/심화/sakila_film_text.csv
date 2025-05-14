@@ -1,0 +1,4 @@
+Field,Type,Null,Key,Default,Extra
+film_id,"smallint unsigned",NO,PRI,NULL,
+title,varchar(255),NO,MUL,NULL,
+description,text,YES,,NULL,

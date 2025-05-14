@@ -1,0 +1,8 @@
+Field,Type,Null,Key,Default,Extra
+rental_id,int,NO,PRI,NULL,auto_increment
+rental_date,datetime,NO,MUL,NULL,
+inventory_id,"mediumint unsigned",NO,MUL,NULL,
+customer_id,"smallint unsigned",NO,MUL,NULL,
+return_date,datetime,YES,,NULL,
+staff_id,"tinyint unsigned",NO,MUL,NULL,
+last_update,timestamp,NO,,CURRENT_TIMESTAMP,"DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
