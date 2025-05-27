@@ -24,7 +24,7 @@
 | 11 라우트와 Axios 연동  |    ✅    |    ✅    |
 | 12 Pinia 상태 관리      |    ✅    |    ✅    |
 
-## ✏️ Today I Learnded
+## ✏️ Today I Learned
 
 #### Node.js
 
