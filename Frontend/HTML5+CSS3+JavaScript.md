@@ -21,7 +21,7 @@
 | 05 자바스크립트 기본 문법 |    ✅    |    ✅    |
 | 06 문서 객체 모델         |    ✅    |    ✅    |
 
-## ✏️ Today I Learnded
+## ✏️ Today I Learned
 
 #### HTML
 

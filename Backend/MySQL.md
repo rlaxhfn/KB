@@ -9,10 +9,12 @@
 | 03 SQL 기본 |    ✅    |    ✅    |
 | 04 SQL 심화 |    ✅    |    ✅    |
 | 05 테이블, 뷰 |    ✅    |    ✅    |
-| 06 인덱스, 사용자 관리 |    ✅    |    ☐    |
-| 07 Java 연동 JDBC 프로그래밍 |    ☐    |    ☐    |
+| 06 인덱스, 사용자 관리 |    ✅    |    ✅    |
+| 07 Java 연동 JDBC 프로그래밍 |    ✅    |    ✅    |
+| 08 JDBC 프로그래밍 - Travel |    ✅    |    ☐    |
+| 08 JDBC 프로그래밍 - CRUD |    ☐    |    ☐    |
 
-## ✏️ Today I Learnded
+## ✏️ Today I Learned
 
 #### MySQL
 - Homebrew로 설치

@@ -18,6 +18,6 @@
 | 12 스트림 요소 처리                  |    ✅     |    ✅     |
 | 13 데이터 입출력                     |    ✅     |    ✅     |
 
-## ✏️ Today I Learnded
+## ✏️ Today I Learned
 
 #### Java
