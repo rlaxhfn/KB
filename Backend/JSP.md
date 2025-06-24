@@ -22,7 +22,7 @@
 | 05 Spring 기본 게시판, 파일 업로드            |    ✅    |    ✅    |
 | 06 Rest+OpenAPI            |    ✅    |    ☐    |
 | 08 Spring AOP, Stomp            |    ✅    |    ☐    |
-| 09 Spring Security Form 기반 로그인, 인증            |    ✅    |    ☐    |
+| 09 Spring Security Form 기반 로그인, 인증            |    ✅    |    ✅    |
 | 10 Spring Security JWT 인증          |    ✅    |    ☐    |
 | 11 Spring Security             |    ☐    |    ☐    |
 
