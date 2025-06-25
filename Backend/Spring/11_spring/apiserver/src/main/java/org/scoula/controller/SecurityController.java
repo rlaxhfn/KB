@@ -1,0 +1,46 @@
+package org.scoula.controller;
+
+import lombok.extern.log4j.Log4j2;
+import org.scoula.security.account.domain.CustomUser;
+import org.scoula.security.account.domain.MemberVO;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.security.Principal;
+
+@Log4j2
+@RequestMapping("/api/security")
+@Controller
+public class SecurityController {
+    @GetMapping("/all")
+    public ResponseEntity<String> doAll(){
+        log.info("do all can access everybody");
+        return ResponseEntity.ok("All can access everybody");
+    }
+    @GetMapping("/member")
+//    public void doMember(){
+//        log.info("logined member");
+//    }
+//    public void doMember(Principal principal){
+//        log.info("username: " + principal.getName());
+//    }
+    public void doMember(Authentication authentication){
+        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+        log.info("username: " + userDetails.getUsername());
+    }
+
+    @GetMapping("/admin")
+//    public void doAdmin(){
+//        log.info("admin only");
+//    }
+    public void doAdmin(@AuthenticationPrincipal CustomUser user){
+        MemberVO memberVO = user.getMember();
+        log.info("admin: "+memberVO);
+    }
+
+}
