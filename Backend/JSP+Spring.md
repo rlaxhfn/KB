@@ -23,7 +23,7 @@
 | 06 Rest+OpenAPI            |    ✅    |    ☐    |
 | 08 Spring AOP, Stomp            |    ✅    |    ☐    |
 | 09 Spring Security Form 기반 로그인, 인증            |    ✅    |    ✅    |
-| 10 Spring Security JWT 인증          |    ✅    |    ☐    |
+| 10 Spring Security JWT 인증          |    ✅    |    ✅    |
 | 11 Spring Security JWT 인증2             |    ☐    |    ☐    |
 
 ## ✏️ Today I Learned
