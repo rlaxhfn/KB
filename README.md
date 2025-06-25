@@ -12,7 +12,7 @@
 
 - [Java](./Backend/Java.md)
 - [MySQL](./Backend/MySQL.md)
-- [JSP&Servlet](./Backend/JSP.md)
+- [JSP+Spring](./Backend/JSP+Spring.md)
 
 ## 개인 작업
 ### Project
